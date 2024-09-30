@@ -1,0 +1,38 @@
+.footer {
+    @apply bg-[#E0E2E7] py-[50px];
+}
+.footer-cntnr {
+    @apply flex flex-col w-priWidth mx-auto gap-y-[30px];
+}
+.footer-top {
+    @apply flex flex-col gap-y-[30px] items-center;
+    @apply lg:flex-row lg:justify-between;
+}
+.footer-top > div {
+    @apply font-normal font-secFont leading-none text-priColor text-[1.25rem] cursor-pointer;
+}
+.footer-links {
+    @apply flex flex-wrap justify-center gap-y-[30px] gap-x-[50px];
+}
+.footer-links > li > a {
+    @apply hover:text-priColor;
+}
+.footer-socials {
+    @apply flex gap-x-[15px];
+}
+.footer-socials > img {
+    @apply size-[22px] transition-transform duration-300 ease-out cursor-pointer hover:scale-[1.15];
+}
+.footer-cntnr > hr {
+    @apply border-[#cfcfcf];
+}
+.footer-bottom {
+    @apply flex flex-col-reverse gap-y-[30px] items-center;
+    @apply lg:flex-row lg:justify-between;
+}
+.footer-bottom > p {
+    @apply text-[#808080];
+}
+.footer-bottom-links > li > a {
+    @apply text-[#808080] font-normal;
+}

@@ -1,0 +1,17 @@
+.home {
+    @apply bg-priBGImg bg-cover bg-center bg-no-repeat flex items-center w-full min-h-screen bg-[#ffffff99] bg-blend-lighten;
+    @apply md:bg-transparent;
+}
+.home-cntnr {
+    @apply w-priWidth mx-auto my-[70px];
+}
+.home-left {
+    @apply flex flex-col text-left w-terWidth;
+    @apply lg:w-[47.5%];
+}
+.home-left > p {
+    @apply my-[10px];
+}
+.home-left > button {
+    @apply mt-[10px] mr-auto;
+}

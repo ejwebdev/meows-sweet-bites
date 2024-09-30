@@ -1,0 +1,43 @@
+.about {
+    @apply py-[100px];
+}
+.about-cntnr {
+    @apply flex flex-col w-priWidth mx-auto gap-y-[10px];
+}
+.about-cntnr > h2 {
+    @apply justify-center;
+}
+.about-cntnr > p {
+    @apply text-center w-secWidth mx-auto;
+}
+.about-grid {
+    @apply grid grid-cols-1  mt-[40px] gap-x-[30px] gap-y-[20px];
+    @apply xl:grid-cols-3;
+}
+.about-grid-left,
+.about-grid-right {
+    @apply grid grid-cols-1 gap-[20px];
+    @apply md:grid-cols-2 xl:w-auto xl:grid-cols-1 xl:gap-y-[50px] xl:my-auto;
+}
+.about-grid-left > div {
+    @apply flex flex-row gap-x-[20px];
+    @apply xl:flex-row-reverse;
+}
+.about-grid-left > div > span,
+.about-grid-right > div > span {
+    @apply text-[40px] text-priColor;
+}
+.about-grid-left > div > div {
+    @apply flex flex-col gap-y-[10px] text-left;
+    @apply xl:text-right;
+}
+.about-grid-middle {
+    @apply w-terWidth mx-auto order-first;
+    @apply xl:w-auto xl:order-none;
+}
+.about-grid-right > div {
+    @apply flex flex-row gap-x-[20px];
+}
+.about-grid-right > div > div {
+    @apply flex flex-col gap-y-[10px] text-left;
+}
