@@ -27,8 +27,8 @@ export default {
                 terWidth: "clamp(200px, 90vw, 400px)",
             },
             backgroundImage: {
-                priBGImg: "url('../../assets/hero-bg.jpg')",
-                secBGImg: "url('../../assets/banner-bg.jpg')",
+                priBGImg: "url('../../assets/hero-bg.webp')",
+                secBGImg: "url('../../assets/banner-bg.webp')",
             },
         },
         screens: {

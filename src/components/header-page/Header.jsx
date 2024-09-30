@@ -65,7 +65,9 @@ function Header() {
                             PRODUCTS
                         </a>
                     </li>
-                    <div onClick={refreshPage}>Sweet Bites</div>
+                    <li>
+                        <div onClick={refreshPage}>Sweet Bites</div>
+                    </li>
                     <li>
                         <a href="#about" onClick={(e) => links("about", e)}>
                             ABOUT

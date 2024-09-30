@@ -1,4 +1,4 @@
-import aboutImg from "../../assets/about-pic.png";
+import aboutImg from "../../assets/about-pic.webp";
 import "./about.css";
 
 const aboutLeft = [

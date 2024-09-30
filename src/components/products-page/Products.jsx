@@ -1,9 +1,9 @@
-import product1 from "../../assets/services1.png";
-import product2 from "../../assets/services2.png";
-import product3 from "../../assets/services3.png";
-import product4 from "../../assets/services4.png";
-import product5 from "../../assets/services5.png";
-import product6 from "../../assets/services6.png";
+import product1 from "../../assets/product1.webp";
+import product2 from "../../assets/product2.webp";
+import product3 from "../../assets/product3.webp";
+import product4 from "../../assets/product4.webp";
+import product5 from "../../assets/product5.webp";
+import product6 from "../../assets/product6.webp";
 import "./products.css";
 
 const products = [
@@ -69,7 +69,7 @@ function Products() {
                         <div key={index}>
                             <img
                                 src={products.img}
-                                alt="Meow's Sweet Bites Services"
+                                alt="Meow's Sweet Bites Products"
                                 draggable="false"
                             />
                             <div className="products-grid-texts">

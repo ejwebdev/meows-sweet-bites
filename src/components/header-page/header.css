@@ -8,8 +8,11 @@
     @apply block font-normal font-secFont leading-none text-priColor text-[1.25rem] cursor-pointer;
     @apply md:hidden;
 }
-.nav > ul > div {
-    @apply hidden font-normal font-secFont leading-none text-priColor text-[1.25rem] cursor-pointer;
+.nav > ul > li > div {
+    @apply font-normal font-secFont leading-none text-priColor text-[1.25rem] cursor-pointer;
+}
+.nav > ul > li:nth-of-type(3) {
+    @apply hidden;
     @apply md:block;
 }
 .nav > ul {
