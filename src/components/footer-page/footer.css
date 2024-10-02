@@ -1,5 +1,5 @@
 .footer {
-    @apply bg-[#E0E2E7] py-[50px];
+    @apply bg-[#e1e2e7] py-[50px];
 }
 .footer-cntnr {
     @apply flex flex-col w-priWidth mx-auto gap-y-[30px];

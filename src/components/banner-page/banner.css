@@ -1,5 +1,5 @@
 .banner {
-    @apply bg-secBGImg bg-cover bg-center bg-no-repeat flex items-center w-full h-auto bg-[#ffffff99] bg-blend-lighten;
+    @apply bg-secBGImg bg-cover bg-center bg-no-repeat flex items-center w-full h-auto bg-[#ffffff77] bg-blend-lighten;
     @apply md:bg-transparent;
 }
 .banner-cntnr {
