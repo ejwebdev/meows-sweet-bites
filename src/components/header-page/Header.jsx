@@ -91,7 +91,7 @@ function Header() {
                                 toggleDropdown();
                             }}
                         >
-                            OFFERS
+                            PRODUCTS
                             <span className="material-symbols-rounded">
                                 keyboard_arrow_down
                             </span>
@@ -106,7 +106,7 @@ function Header() {
                                     href="#products"
                                     onClick={(e) => links("products", e)}
                                 >
-                                    PRODUCTS
+                                    OFFERS
                                 </a>
                             </li>
                             <li>
