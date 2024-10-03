@@ -5,7 +5,7 @@ import Pricing from "./pages/Pricing.jsx";
 
 function App() {
     return (
-        <HashRouter basename="/meows-sweet-bites/">
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Header />}>
                     <Route index element={<Default />} />
