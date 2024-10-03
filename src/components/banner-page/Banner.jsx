@@ -24,7 +24,7 @@ function Banner() {
                     We delivers the finest cakes and flowers, lovingly crafted
                     with care for you and your cherished moments.
                 </p>
-                <button onClick={buttonLink}>ORDER NOW</button>
+                <button onClick={buttonLink}>CONTACT US</button>
             </div>
         </section>
     );

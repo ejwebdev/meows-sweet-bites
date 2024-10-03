@@ -9,7 +9,7 @@ function Hero() {
     };
 
     const buttonLink = () => {
-        smoothScroll("contact");
+        smoothScroll("products");
     };
 
     return (

@@ -13,7 +13,7 @@
     @apply flex flex-col gap-y-[20px];
 }
 .contact-left > form label {
-    @apply flex gap-x-[5px] mb-[10px] font-bold font-priFont text-priBold;
+    @apply flex gap-x-[5px] mb-[10px] font-semibold font-priFont text-priBold;
 }
 .contact-left > form label > span {
     @apply font-priFont text-[#d62633];

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./header.css";
@@ -31,6 +32,11 @@ function Header() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
+
     const smoothScroll = (id) => {
         const element = document.getElementById(id);
         if (element) {
@@ -52,6 +58,7 @@ function Header() {
     const links = (id, event) => {
         event.preventDefault();
         setIsMenuOpen(false);
+        setIsDropdownOpen(false);
 
         if (window.location.pathname === "/") {
             smoothScroll(id);
@@ -59,6 +66,11 @@ function Header() {
             navigate("/", { replace: true });
             setTimeout(() => smoothScroll(id), 0);
         }
+    };
+
+    const pageClick = () => {
+        setIsMenuOpen(false);
+        setIsDropdownOpen(false);
     };
 
     return (
@@ -73,14 +85,41 @@ function Header() {
                     </li>
                     <li>
                         <a
-                            href="#products"
-                            onClick={(e) => links("products", e)}
+                            href=""
+                            onClick={(e) => {
+                                e.preventDefault();
+                                toggleDropdown();
+                            }}
                         >
-                            PRODUCTS
+                            OFFERS
+                            <span className="material-symbols-rounded">
+                                keyboard_arrow_down
+                            </span>
                         </a>
+                        <ul
+                            className={`dropdown ${
+                                isDropdownOpen ? "open" : "hidden"
+                            }`}
+                        >
+                            <li>
+                                <a
+                                    href="#products"
+                                    onClick={(e) => links("products", e)}
+                                >
+                                    PRODUCTS
+                                </a>
+                            </li>
+                            <li>
+                                <Link to="price-lists" onClick={pageClick}>
+                                    PRICE LISTS
+                                </Link>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <div onClick={refreshPage}>Sweet Bites</div>
+                        <div className="logo" onClick={refreshPage}>
+                            Sweet Bites
+                        </div>
                     </li>
                     <li>
                         <a href="#about" onClick={(e) => links("about", e)}>
