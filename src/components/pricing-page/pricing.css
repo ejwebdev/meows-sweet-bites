@@ -1,0 +1,6 @@
+.pricing {
+    @apply w-full min-h-screen flex justify-center items-center;
+}
+.pricing-cntnr {
+    @apply w-priWidth flex text-center flex-col gap-y-[10px];
+}

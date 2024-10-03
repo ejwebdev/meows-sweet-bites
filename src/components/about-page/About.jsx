@@ -37,9 +37,8 @@ function About() {
                 </h2>
                 <p>
                     Meow&apos;s Sweet Bites specializes in handcrafted cakes and
-                    treats made with the finest ingredients. We ensures every
-                    creation is beautifully crafted, perfect for celebrating any
-                    occasions.
+                    flowers that is made with love. We ensures every creation is
+                    beautifully crafted, perfect for celebrating any occasions.
                 </p>
                 <div className="about-grid">
                     <div className="about-grid-left">

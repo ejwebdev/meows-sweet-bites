@@ -1,5 +1,5 @@
 .footer {
-    @apply bg-[#e1e2e7] py-[50px];
+    @apply bg-priColor py-[50px];
 }
 .footer-cntnr {
     @apply flex flex-col w-priWidth mx-auto gap-y-[30px];
@@ -9,13 +9,13 @@
     @apply lg:flex-row lg:justify-between;
 }
 .footer-top > div {
-    @apply font-normal font-secFont leading-none text-priColor text-[1.25rem] cursor-pointer;
+    @apply font-normal font-secFont leading-none text-secBold text-[1.25rem] cursor-pointer;
 }
 .footer-links {
     @apply flex flex-wrap justify-center gap-y-[30px] gap-x-[50px];
 }
 .footer-links > li > a {
-    @apply hover:text-priColor;
+    @apply text-secBold hover:text-white;
 }
 .footer-socials {
     @apply flex gap-x-[15px];
@@ -24,15 +24,15 @@
     @apply size-[22px] transition-transform duration-300 ease-out cursor-pointer hover:scale-[1.15];
 }
 .footer-cntnr > hr {
-    @apply border-[#cfcfcf];
+    @apply border-[#d36196];
 }
 .footer-bottom {
     @apply flex flex-col-reverse gap-y-[30px] items-center;
     @apply lg:flex-row lg:justify-between;
 }
 .footer-bottom > p {
-    @apply text-[#808080];
+    @apply text-secText;
 }
 .footer-bottom-links > li > a {
-    @apply text-[#808080] font-normal;
+    @apply font-normal text-secText hover:text-secBold;
 }

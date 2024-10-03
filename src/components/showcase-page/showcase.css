@@ -1,0 +1,37 @@
+.showcase {
+    @apply bg-secBG py-[100px];
+}
+.showcase-cntnr {
+    @apply flex flex-col w-priWidth mx-auto gap-y-[10px];
+}
+.showcase-cntnr > h2 {
+    @apply justify-center;
+}
+.showcase-cntnr > p:nth-of-type(1) {
+    @apply text-center w-secWidth mx-auto;
+}
+.showcase-cntnr > p:nth-of-type(2) {
+    @apply text-center;
+}
+.showcase-grid {
+    @apply grid grid-cols-1 items-center mx-auto mt-[40px] gap-[10px] w-full;
+    @apply md:grid-cols-2 xl:grid-cols-4;
+}
+.showcase-grid > div {
+    @apply relative size-full;
+}
+.showcase-grid > div > img {
+    @apply size-full object-cover rounded-[5px];
+}
+.showcase-grid-link {
+    @apply absolute opacity-0 flex justify-center items-center top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 rounded-[5px] transition-opacity duration-200 ease-out;
+}
+.showcase-grid > div:hover > .showcase-grid-link {
+    @apply opacity-100;
+}
+.showcase-grid-link > button {
+    @apply hover:text-secBold;
+}
+.showcase-cntnr > button {
+    @apply mx-auto mt-[20px];
+}

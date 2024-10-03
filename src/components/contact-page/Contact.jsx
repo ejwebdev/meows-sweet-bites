@@ -7,16 +7,20 @@ const contactRight = [
         icon: "home_work",
         title: "OUR ADDRESS",
         desc: "Sta. Lucia, Magalang, Pampanga",
+        link: "https://maps.app.goo.gl/z5fAVVJcvX832TMj7",
+        target: "_blank",
     },
     {
         icon: "perm_phone_msg",
         title: "CONTACT US",
         desc: "+63994-416-1811",
+        link: "tel:09944161811",
     },
     {
         icon: "stacked_email",
         title: "EMAIL ADDRESS",
         desc: "zaidjessieyangg@gmail.com",
+        link: "mailto:zaidjessieyangg@gmail.com",
     },
 ];
 
@@ -131,7 +135,13 @@ function Contact() {
                                 </span>
                                 <div>
                                     <h3>{contactRight.title}</h3>
-                                    <p>{contactRight.desc}</p>
+                                    <a
+                                        href={contactRight.link}
+                                        target={contactRight.target}
+                                        rel="noopener noreferrer"
+                                    >
+                                        {contactRight.desc}
+                                    </a>
                                 </div>
                             </div>
                         ))}
