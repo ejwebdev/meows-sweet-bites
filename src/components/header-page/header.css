@@ -32,7 +32,7 @@
 }
 .nav .dropdown {
     @apply hidden relative bg-priBG flex-col left-0 mt-[30px] gap-y-[30px];
-    @apply md:absolute md:mt-0 md:top-[70px] md:gap-y-[20px] md:w-[150px] md:p-[20px] md:border-t-[3px] md:border-t-priColor md:shadow;
+    @apply md:absolute md:mt-0 md:top-[70px] md:gap-y-[20px] md:w-[150px] md:p-[20px] md:border-t md:border-t-priColor md:shadow;
 }
 .nav > ul > li:hover > .dropdown,
 .nav .dropdown.open {
