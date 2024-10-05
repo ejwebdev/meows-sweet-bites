@@ -4,20 +4,20 @@ import "./contact.css";
 
 const contactRight = [
     {
-        icon: "home_work",
+        icon: "home",
         title: "OUR ADDRESS",
         desc: "Sta. Lucia, Magalang, Pampanga",
         link: "https://maps.app.goo.gl/z5fAVVJcvX832TMj7",
         target: "_blank",
     },
     {
-        icon: "perm_phone_msg",
+        icon: "call",
         title: "CONTACT US",
         desc: "+63994-416-1811",
         link: "tel:09944161811",
     },
     {
-        icon: "stacked_email",
+        icon: "outgoing_mail",
         title: "EMAIL ADDRESS",
         desc: "zaidjessieyangg@gmail.com",
         link: "mailto:zaidjessieyangg@gmail.com",

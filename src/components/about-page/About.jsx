@@ -8,7 +8,7 @@ const aboutLeft = [
         desc: "We offer premium cakes and stunning, handmade bouquets.",
     },
     {
-        icon: "local_shipping",
+        icon: "box",
         title: "FAST DELIVERY",
         desc: "We always ensure fast, safe, and on-time delivery for all orders.",
     },
