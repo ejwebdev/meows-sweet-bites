@@ -6,7 +6,6 @@ export default {
             fontFamily: {
                 priFont: "'Poppins', sans-serif",
                 secFont: "'Great Vibes', cursive",
-                terFont: "'Montserrat', sans-serif",
             },
             colors: {
                 priColor: "#C14679",
