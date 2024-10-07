@@ -52,13 +52,16 @@ function Showcase() {
                                 alt="Meow's Sweet Bites Showcase"
                             />
                             <div className="showcase-grid-link">
-                                <button
+                                <p
                                     onClick={() =>
                                         showcaseDetails(showcase.link)
                                     }
                                 >
-                                    VIEW POST
-                                </button>
+                                    View Post
+                                    <span className="material-symbols-rounded">
+                                        trending_flat
+                                    </span>
+                                </p>
                             </div>
                         </div>
                     ))}

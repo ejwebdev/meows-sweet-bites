@@ -6,7 +6,7 @@
     @apply w-priWidth mx-auto my-[70px];
 }
 .home-left {
-    @apply flex flex-col text-left w-terWidth;
+    @apply flex flex-col text-left w-quaWidth;
     @apply lg:w-[47.5%];
 }
 .home-left > p {

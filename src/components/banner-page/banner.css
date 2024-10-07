@@ -9,7 +9,7 @@
     @apply justify-center;
 }
 .banner-cntnr > p {
-    @apply w-terWidth my-[10px] mx-auto;
+    @apply w-quaWidth my-[10px] mx-auto;
 }
 .banner-cntnr > button {
     @apply mt-[10px] mx-auto;

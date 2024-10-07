@@ -29,8 +29,11 @@
 .showcase-grid > div:hover > .showcase-grid-link {
     @apply opacity-100;
 }
-.showcase-grid-link > button {
-    @apply hover:text-secBold;
+.showcase-grid-link > p {
+    @apply flex items-center gap-x-[10px] text-secBold cursor-pointer;
+}
+.showcase-grid-link > p > span {
+    @apply text-[1.25rem];
 }
 .showcase-cntnr > button {
     @apply mx-auto mt-[20px];
