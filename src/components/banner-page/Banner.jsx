@@ -1,15 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import "./banner.css";
 
 function Banner() {
-    const smoothScroll = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
-    const buttonLink = () => {
-        smoothScroll("contact");
+    const navigate = useNavigate();
+    const orderNowClick = () => {
+        navigate("/contact");
+        window.scrollTo(0, 0);
     };
 
     return (
@@ -24,7 +20,7 @@ function Banner() {
                     We delivers the finest cakes and flowers, lovingly crafted
                     with care for you and your cherished moments.
                 </p>
-                <button onClick={buttonLink}>CONTACT US</button>
+                <button onClick={orderNowClick}>CONTACT US</button>
             </div>
         </section>
     );

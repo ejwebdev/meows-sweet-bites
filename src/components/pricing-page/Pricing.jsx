@@ -47,25 +47,10 @@ const pricing = [
 ];
 
 function Pricing() {
-    const smoothScroll = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
     const navigate = useNavigate();
-
-    // Event Listener
-    const links = (id, event) => {
-        event.preventDefault();
-
-        if (location.pathname === "/") {
-            smoothScroll(id);
-        } else {
-            navigate("/", { replace: true });
-            setTimeout(() => smoothScroll(id), 0);
-        }
+    const orderNowClick = () => {
+        navigate("/contact");
+        window.scrollTo(0, 0);
     };
 
     return (
@@ -96,9 +81,7 @@ function Pricing() {
                                     </div>
                                 ))}
                             </div>
-                            <button onClick={(e) => links("contact", e)}>
-                                ORDER NOW
-                            </button>
+                            <button onClick={orderNowClick}>ORDER NOW</button>
                         </div>
                     ))}
                 </div>

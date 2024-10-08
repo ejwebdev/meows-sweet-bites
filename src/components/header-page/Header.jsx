@@ -1,4 +1,4 @@
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./header.css";
 
@@ -36,35 +36,19 @@ function Header() {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
-    const smoothScroll = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
     const location = useLocation();
     const bgColor =
         location.pathname === "/"
             ? isScrolled
-                ? "bg-priBG shadow"
-                : "bg-transparent"
-            : "bg-priBG shadow";
-
-    const navigate = useNavigate();
+                ? "bg-priBG shadow fixed"
+                : "bg-transparent fixed"
+            : "bg-priBG shadow sticky";
 
     // Event Listener
-    const links = (id, event) => {
-        event.preventDefault();
+    const pageLinks = () => {
         setIsMenuOpen(false);
         setIsDropdownOpen(false);
-
-        if (location.pathname === "/") {
-            smoothScroll(id);
-        } else {
-            navigate("/", { replace: true });
-            setTimeout(() => smoothScroll(id), 0);
-        }
+        window.scrollTo(0, 0);
     };
 
     return (
@@ -73,9 +57,9 @@ function Header() {
                 <div onClick={refreshPage}>Sweet Bites</div>
                 <ul className={isMenuOpen ? "left-0" : "-left-[200%]"}>
                     <li>
-                        <a href="#home" onClick={(e) => links("home", e)}>
+                        <Link to="/" onClick={pageLinks}>
                             HOME
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a
@@ -96,22 +80,12 @@ function Header() {
                             }`}
                         >
                             <li>
-                                <a
-                                    href="#products"
-                                    onClick={(e) => links("products", e)}
-                                >
+                                <Link to="/products" onClick={pageLinks}>
                                     OFFERS
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <Link
-                                    to="/price-lists"
-                                    onClick={() => {
-                                        setIsMenuOpen(false);
-                                        setIsDropdownOpen(false);
-                                        window.scrollTo(0, 0);
-                                    }}
-                                >
+                                <Link to="/price-lists" onClick={pageLinks}>
                                     PRICE LISTS
                                 </Link>
                             </li>
@@ -121,14 +95,14 @@ function Header() {
                         <div onClick={refreshPage}>Sweet Bites</div>
                     </li>
                     <li>
-                        <a href="#about" onClick={(e) => links("about", e)}>
+                        <Link to="/about" onClick={pageLinks}>
                             ABOUT
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#contact" onClick={(e) => links("contact", e)}>
+                        <Link to="/contact" onClick={pageLinks}>
                             CONTACT
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <span className="material-symbols-rounded" onClick={toggleMenu}>

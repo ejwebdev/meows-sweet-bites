@@ -2,29 +2,13 @@ import facebook from "../../assets/facebook.svg";
 import tiktok from "../../assets/tiktok.svg";
 import messenger from "../../assets/messenger.svg";
 import instagram from "../../assets/instagram.svg";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 function Footer() {
-    const smoothScroll = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
-    const navigate = useNavigate();
-
     // Event Listener
-    const links = (id, event) => {
-        event.preventDefault();
-
-        if (location.pathname === "/") {
-            smoothScroll(id);
-        } else {
-            navigate("/", { replace: true });
-            setTimeout(() => smoothScroll(id), 0);
-        }
+    const pageLinks = () => {
+        window.scrollTo(0, 0);
     };
 
     const refreshPage = () => {
@@ -50,30 +34,24 @@ function Footer() {
                     <div onClick={refreshPage}>Sweet Bites</div>
                     <ul className="footer-links">
                         <li>
-                            <a href="#home" onClick={(e) => links("home", e)}>
+                            <Link to="/" onClick={pageLinks}>
                                 HOME
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#products"
-                                onClick={(e) => links("products", e)}
-                            >
+                            <Link to="/products" onClick={pageLinks}>
                                 PRODUCTS
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#about" onClick={(e) => links("about", e)}>
+                            <Link to="/about" onClick={pageLinks}>
                                 ABOUT
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#contact"
-                                onClick={(e) => links("contact", e)}
-                            >
+                            <Link to="/contact" onClick={pageLinks}>
                                 CONTACT
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <div className="footer-socials">

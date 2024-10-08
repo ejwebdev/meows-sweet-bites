@@ -1,15 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import "./hero.css";
 
 function Hero() {
-    const smoothScroll = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
-    const buttonLink = () => {
-        smoothScroll("products");
+    const navigate = useNavigate();
+    const orderNowClick = () => {
+        navigate("/products");
+        window.scrollTo(0, 0);
     };
 
     return (
@@ -28,7 +24,7 @@ function Hero() {
                         flowers made with love, carefully crafted for you and
                         your special moments. Order Now!
                     </p>
-                    <button onClick={buttonLink}>ORDER NOW</button>
+                    <button onClick={orderNowClick}>ORDER NOW</button>
                 </div>
             </div>
         </section>
