@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
 import "./header.css";
 
 function Header() {
@@ -60,17 +59,12 @@ function Header() {
         setIsMenuOpen(false);
         setIsDropdownOpen(false);
 
-        if (window.location.pathname === "/") {
+        if (location.pathname === "/") {
             smoothScroll(id);
         } else {
             navigate("/", { replace: true });
             setTimeout(() => smoothScroll(id), 0);
         }
-    };
-
-    const pageClick = () => {
-        setIsMenuOpen(false);
-        setIsDropdownOpen(false);
     };
 
     return (
@@ -110,7 +104,14 @@ function Header() {
                                 </a>
                             </li>
                             <li>
-                                <Link to="price-lists" onClick={pageClick}>
+                                <Link
+                                    to="/price-lists"
+                                    onClick={() => {
+                                        setIsMenuOpen(false);
+                                        setIsDropdownOpen(false);
+                                        window.scrollTo(0, 0);
+                                    }}
+                                >
                                     PRICE LISTS
                                 </Link>
                             </li>

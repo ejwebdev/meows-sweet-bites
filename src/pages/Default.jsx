@@ -4,7 +4,6 @@ import Banner from "../components/banner-page/Banner.jsx";
 import About from "../components/about-page/About.jsx";
 import Showcase from "../components/showcase-page/Showcase.jsx";
 import Contact from "../components/contact-page/Contact.jsx";
-import Footer from "../components/footer-page/Footer.jsx";
 
 function Default() {
     return (
@@ -15,7 +14,6 @@ function Default() {
             <About />
             <Showcase />
             <Contact />
-            <Footer />
         </>
     );
 }

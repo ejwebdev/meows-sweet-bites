@@ -18,7 +18,7 @@
     @apply flex flex-col bg-transparent rounded-[5px];
 }
 .products-grid > div > img {
-    @apply w-full h-auto rounded-[5px] p-[10px] border border-solid border-[#808080];
+    @apply w-full h-auto rounded-[5px] p-[10px] border border-solid border-[#d7d8df];
 }
 .products-grid-texts {
     @apply flex flex-col text-center h-full gap-y-[10px] p-[25px];

@@ -12,37 +12,37 @@ const products = [
         img: product1,
         title: "CUPCAKES",
         desc: "Miniature cakes, a popular choice for celebrations and sweet treats.",
-        link: "price-lists",
+        link: "/price-lists",
     },
     {
         img: product2,
         title: "BENTO CAKES",
         desc: "Bento-style boxes perfect for individual servings and intimate celebrations.",
-        link: "price-lists",
+        link: "/price-lists",
     },
     {
         img: product3,
         title: "SPECIAL CAKES",
         desc: "Crafted with premium and artistic ingredients making extraordinary celebration.",
-        link: "price-lists",
+        link: "/price-lists",
     },
     {
         img: product4,
         title: "FLOWER BOUQUET",
         desc: "Brighten any occasion with our handpicked, vibrant flower bouquets.",
-        link: "price-lists",
+        link: "/price-lists",
     },
     {
         img: product5,
         title: "CHOCOLATE BOUQUET",
         desc: "Delight with our chocolate bouquets, expertly arranged for a sweet gift.",
-        link: "price-lists",
+        link: "/price-lists",
     },
     {
         img: product6,
         title: "MONEY BOUQUET",
         desc: "Gift luxury with our elegant money bouquets, crafted for special moments.",
-        link: "price-lists",
+        link: "/price-lists",
     },
 ];
 
@@ -74,6 +74,9 @@ function Products() {
                                 <Link
                                     to={products.link}
                                     className="services-grid-link"
+                                    onClick={() => {
+                                        window.scrollTo(0, 0);
+                                    }}
                                 >
                                     <p>Price Lists</p>
                                     <span className="material-symbols-rounded">

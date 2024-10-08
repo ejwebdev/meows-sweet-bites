@@ -2,6 +2,7 @@ import facebook from "../../assets/facebook.svg";
 import tiktok from "../../assets/tiktok.svg";
 import messenger from "../../assets/messenger.svg";
 import instagram from "../../assets/instagram.svg";
+import { useNavigate } from "react-router-dom";
 import "./footer.css";
 
 function Footer() {
@@ -12,10 +13,18 @@ function Footer() {
         }
     };
 
+    const navigate = useNavigate();
+
     // Event Listener
     const links = (id, event) => {
         event.preventDefault();
-        smoothScroll(id);
+
+        if (location.pathname === "/") {
+            smoothScroll(id);
+        } else {
+            navigate("/", { replace: true });
+            setTimeout(() => smoothScroll(id), 0);
+        }
     };
 
     const refreshPage = () => {
