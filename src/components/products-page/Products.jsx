@@ -48,7 +48,7 @@ const products = [
 
 function Products() {
     return (
-        <section className="products" id="products">
+        <section className="products">
             <div className="products-cntnr">
                 <h2>
                     <span className="material-symbols-rounded">line_end</span>

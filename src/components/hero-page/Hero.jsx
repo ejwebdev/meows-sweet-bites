@@ -9,7 +9,7 @@ function Hero() {
     };
 
     return (
-        <section className="home" id="home">
+        <section className="home">
             <div className="home-cntnr">
                 <div className="home-left">
                     <h1>Meow&apos;s</h1>

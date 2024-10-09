@@ -54,7 +54,7 @@ function Pricing() {
     };
 
     return (
-        <section className="pricing" id="price">
+        <section className="pricing">
             <div className="pricing-cntnr">
                 <h2>
                     <span className="material-symbols-rounded">line_end</span>

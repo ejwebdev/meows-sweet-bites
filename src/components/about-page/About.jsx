@@ -29,7 +29,7 @@ const aboutRight = [
 
 function About() {
     return (
-        <section className="about" id="about">
+        <section className="about">
             <div className="about-cntnr">
                 <h2>
                     <span className="material-symbols-rounded">line_end</span>
