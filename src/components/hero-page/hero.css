@@ -3,7 +3,7 @@
     @apply md:bg-transparent;
 }
 .home-cntnr {
-    @apply w-priWidth mx-auto my-[70px];
+    @apply w-priWidth mx-auto my-[80px];
 }
 .home-left {
     @apply flex flex-col text-left w-quaWidth;

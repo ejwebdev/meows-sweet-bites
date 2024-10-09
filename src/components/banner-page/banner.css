@@ -3,7 +3,7 @@
     @apply md:bg-transparent;
 }
 .banner-cntnr {
-    @apply w-priWidth flex flex-col text-center mx-auto my-[100px];
+    @apply w-priWidth flex flex-col text-center mx-auto my-[80px];
 }
 .banner-cntnr > h2 {
     @apply justify-center;

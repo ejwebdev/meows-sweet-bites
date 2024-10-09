@@ -1,5 +1,5 @@
 .pricing {
-    @apply py-[100px];
+    @apply py-[80px];
 }
 .pricing-cntnr {
     @apply flex flex-col w-priWidth mx-auto gap-y-[10px];
