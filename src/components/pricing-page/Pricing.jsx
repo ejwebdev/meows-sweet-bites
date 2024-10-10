@@ -3,18 +3,20 @@ import "./pricing.css";
 
 const pricing = [
     {
+        icon: "cake",
         title: "CAKES",
         perks: [
+            "In Cup • 7oz • ₱70",
             "Bento • 4x2 • ₱220",
             "Mini • 5x2 • ₱280",
             "Mini • 5x4 • ₱380",
             "Cake • 6x3 • ₱450",
-            "Cake • 6x4 • ₱600",
             "In Tub • 8x12 • ₱480",
-            "In Cup • 7oz • ₱70",
+            "Cake • 6x4 • ₱600",
         ],
     },
     {
+        icon: "icecream",
         title: "CUPCAKES",
         perks: [
             "Simple • 4pcs • ₱150",
@@ -26,16 +28,18 @@ const pricing = [
         ],
     },
     {
+        icon: "spa",
         title: "BOUQUET",
         perks: [
-            "Chocolate • ₱250-500",
             "Single • ₱150-250",
+            "Chocolate • ₱250-500",
             "Handmade • ₱350-550",
             "Fresh • ₱650-950",
             "Money • ₱800-900",
         ],
     },
     {
+        icon: "featured_seasonal_and_gifts",
         title: "CAKE BUNDLE",
         perks: [
             "Bento & 2 Simple • ₱350",
@@ -68,17 +72,15 @@ function Pricing() {
                 <div className="pricing-grid">
                     {pricing.map((pricing, index) => (
                         <div key={index}>
+                            <span className="material-symbols-rounded">
+                                {pricing.icon}
+                            </span>
                             <h3>{pricing.title}</h3>
-                            <p>Choose your order below.</p>
+                            <p>Select an option</p>
                             <hr />
                             <div className="pricing-grid-perks">
-                                {pricing.perks.map((perks, perksIndex) => (
-                                    <div key={perksIndex}>
-                                        <span className="material-symbols-rounded">
-                                            check_small
-                                        </span>
-                                        <p>{perks}</p>
-                                    </div>
+                                {pricing.perks.map((perks, perkIndex) => (
+                                    <p key={perkIndex}>{perks}</p>
                                 ))}
                             </div>
                             <button onClick={orderNowClick}>ORDER NOW</button>

@@ -1,40 +1,40 @@
-.showcase {
+.customers {
     @apply py-[80px];
 }
-.showcase-cntnr {
+.customers-cntnr {
     @apply flex flex-col w-priWidth mx-auto gap-y-[10px];
 }
-.showcase-cntnr > h2 {
+.customers-cntnr > h2 {
     @apply justify-center;
 }
-.showcase-cntnr > p:nth-of-type(1) {
+.customers-cntnr > p:nth-of-type(1) {
     @apply text-center w-secWidth mx-auto;
 }
-.showcase-cntnr > p:nth-of-type(2) {
+.customers-cntnr > p:nth-of-type(2) {
     @apply text-center;
 }
-.showcase-grid {
-    @apply grid grid-cols-1 items-center mx-auto mt-[40px] gap-[10px] w-full;
-    @apply md:grid-cols-2 xl:grid-cols-4;
+.customers-grid {
+    @apply grid grid-cols-2 items-center mx-auto mt-[40px] gap-[10px] w-full;
+    @apply xl:grid-cols-4;
 }
-.showcase-grid > div {
+.customers-grid > div {
     @apply relative size-full;
 }
-.showcase-grid > div > img {
+.customers-grid > div > img {
     @apply size-full object-cover rounded-[5px];
 }
-.showcase-grid-link {
+.customers-grid-link {
     @apply absolute opacity-0 flex justify-center items-center top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 rounded-[5px] transition-opacity duration-200 ease-out;
 }
-.showcase-grid > div:hover > .showcase-grid-link {
+.customers-grid > div:hover > .customers-grid-link {
     @apply opacity-100;
 }
-.showcase-grid-link > p {
+.customers-grid-link > p {
     @apply flex items-center gap-x-[10px] text-secBold cursor-pointer;
 }
-.showcase-grid-link > p > span {
+.customers-grid-link > p > span {
     @apply text-[1.25rem];
 }
-.showcase-cntnr > button {
+.customers-cntnr > button {
     @apply mx-auto mt-[20px];
 }

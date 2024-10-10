@@ -1,0 +1,16 @@
+.banner2 {
+    @apply bg-secBGImg bg-cover bg-center bg-no-repeat flex items-center w-full h-auto bg-[#ffffff77] bg-blend-lighten;
+    @apply md:bg-transparent;
+}
+.banner2-cntnr {
+    @apply w-priWidth flex flex-col text-center mx-auto my-[80px];
+}
+.banner2-cntnr > h1 {
+    @apply text-[1.5rem] sm:text-[1.75rem] md:text-[2rem];
+}
+.banner2-cntnr > p {
+    @apply w-terWidth my-[20px] mx-auto;
+}
+.banner2-cntnr > button {
+    @apply flex items-center mx-auto rounded-[30px] px-[12px];
+}

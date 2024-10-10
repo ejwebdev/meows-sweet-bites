@@ -78,9 +78,9 @@ function Products() {
                                         window.scrollTo(0, 0);
                                     }}
                                 >
-                                    <p>Price Lists</p>
+                                    Price Lists
                                     <span className="material-symbols-rounded">
-                                        trending_flat
+                                        arrow_forward
                                     </span>
                                 </Link>
                             </div>

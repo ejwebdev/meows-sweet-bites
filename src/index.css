@@ -30,7 +30,7 @@ li {
     @apply list-none;
 }
 a {
-    @apply block no-underline font-semibold text-sm text-priBold transition-colors duration-200 ease-out;
+    @apply block no-underline font-semibold tracking-widest text-[0.82rem] text-priBold transition-colors duration-200 ease-out;
 }
 h1 {
     @apply font-secFont text-priColor leading-none text-[5rem] sm:text-[5.5rem] md:text-[6rem];
@@ -39,8 +39,8 @@ h2 {
     @apply flex items-center gap-x-[10px] font-bold font-priFont tracking-widest text-priBold text-[1.25rem] sm:text-[1.5rem] md:text-[1.75rem];
 }
 h3 {
-    @apply font-semibold font-priFont text-priBold;
+    @apply font-bold font-priFont tracking-widest text-priBold;
 }
 button {
-    @apply font-semibold font-priFont text-sm py-[12px] px-[30px] rounded-[5px] text-secBold bg-priColor border border-solid border-priColor shadow-lg cursor-pointer transition-colors duration-200 ease-out hover:bg-transparent hover:text-priBold active:opacity-90;
+    @apply font-semibold font-priFont tracking-widest text-[0.82rem] py-[12px] px-[30px] rounded-[5px] text-secBold bg-priColor border border-solid border-priColor shadow-lg cursor-pointer transition-colors duration-200 ease-out hover:bg-transparent hover:text-priBold active:opacity-90;
 }

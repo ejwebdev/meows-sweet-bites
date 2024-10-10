@@ -1,5 +1,5 @@
 .pricing {
-    @apply py-[80px];
+    @apply bg-secBG py-[80px];
 }
 .pricing-cntnr {
     @apply flex flex-col w-priWidth mx-auto gap-y-[10px];
@@ -15,19 +15,16 @@
     @apply md:grid-cols-2 xl:grid-cols-4;
 }
 .pricing-grid > div {
-    @apply flex flex-col text-center gap-y-[10px] rounded-[5px] p-[30px] border border-solid border-[#d7d8df];
+    @apply flex flex-col text-center gap-y-[10px] bg-priBG shadow-lg rounded-[5px] p-[30px] h-full;
+}
+.pricing-grid > div > span {
+    @apply mb-[10px] text-[40px] text-priColor;
 }
 .pricing-grid > div > hr {
     @apply my-[10px] border-[#d7d8df];
 }
 .pricing-grid-perks {
-    @apply flex flex-col items-center gap-y-[10px];
-}
-.pricing-grid-perks > div {
-    @apply flex items-center gap-x-[10px];
-}
-.pricing-grid-perks > div > span {
-    @apply text-[1.25rem] text-priText;
+    @apply flex flex-col items-center gap-y-[10px] mb-auto;
 }
 .pricing-grid > div > button {
     @apply mx-auto mt-[10px];
