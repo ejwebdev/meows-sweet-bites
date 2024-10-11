@@ -3,7 +3,7 @@ import Header from "./components/header-page/Header.jsx";
 import Default from "./pages/Default.jsx";
 import Products from "./components/products-page/Products.jsx";
 import Pricing from "./components/pricing-page/Pricing.jsx";
-import About from "./components/about-page/About.jsx";
+import About from "./pages/About.jsx";
 import Contact from "./components/contact-page/Contact.jsx";
 import Banner2 from "./components/banner2-page/Banner2.jsx";
 import Footer from "./components/footer-page/Footer.jsx";
