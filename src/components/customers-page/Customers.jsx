@@ -63,7 +63,7 @@ function Customers() {
                             <img
                                 src={customers.img}
                                 draggable="false"
-                                alt="Meow's Sweet Bites Showcase"
+                                alt="Meow's Sweet Bites Customers"
                             />
                             <div className="customers-grid-link">
                                 <p

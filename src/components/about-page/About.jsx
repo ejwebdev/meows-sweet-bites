@@ -57,7 +57,7 @@ function About() {
                     <div className="about-grid-middle">
                         <img
                             src={aboutImg}
-                            alt="Meow's Sweet Bites About Image"
+                            alt="Meow's Sweet Bites Owner - Jeyci Diaz"
                             draggable="false"
                         />
                     </div>

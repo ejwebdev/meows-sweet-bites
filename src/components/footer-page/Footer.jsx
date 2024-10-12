@@ -57,28 +57,28 @@ function Footer() {
                     <div className="footer-socials">
                         <img
                             src={facebook}
-                            alt="Eventify Facebook"
+                            alt="Meow's Sweet Bites Facebook"
                             draggable="false"
                             rel="noopener noreferrer"
                             onClick={facebookLink}
                         />
                         <img
                             src={tiktok}
-                            alt="Eventify Tiktok"
+                            alt="Meow's Sweet Bites Tiktok"
                             draggable="false"
                             rel="noopener noreferrer"
                             onClick={tiktokLink}
                         />
                         <img
                             src={messenger}
-                            alt="Eventify Messenger"
+                            alt="Meow's Sweet Bites Messenger"
                             draggable="false"
                             rel="noopener noreferrer"
                             onClick={messengerLink}
                         />
                         <img
                             src={instagram}
-                            alt="Eventify Instagram"
+                            alt="Meow's Sweet Bites Instagram"
                             draggable="false"
                             rel="noopener noreferrer"
                             onClick={instagramLink}
