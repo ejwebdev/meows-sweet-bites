@@ -12,7 +12,7 @@ import Footer from "./components/footer-page/Footer.jsx";
 function App() {
     useEffect(() => {
         const location = window.location.pathname;
-        window.gtag("config", "G-B0H2ZT4BZ9", {
+        window.gtag("config", "G-YZGQYK5LZM", {
             page_path: location,
         });
     }, []);
