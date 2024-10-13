@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
 import Header from "./components/header-page/Header.jsx";
@@ -17,7 +17,7 @@ function App() {
     }, [location]);
 
     return (
-        <HashRouter>
+        <>
             <Header />
             <Routes>
                 <Route path="/" element={<Default />} />
@@ -28,7 +28,7 @@ function App() {
             </Routes>
             <Banner2 />
             <Footer />
-        </HashRouter>
+        </>
     );
 }
 
