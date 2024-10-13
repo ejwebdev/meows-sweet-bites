@@ -1,4 +1,6 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
 import Header from "./components/header-page/Header.jsx";
 import Default from "./pages/Default.jsx";
 import Products from "./components/products-page/Products.jsx";
@@ -9,6 +11,11 @@ import Banner2 from "./components/banner2-page/Banner2.jsx";
 import Footer from "./components/footer-page/Footer.jsx";
 
 function App() {
+    const location = useLocation();
+    useEffect(() => {
+        ReactGA.send({ hitType: "pageview", page: location.pathname });
+    }, [location]);
+
     return (
         <HashRouter>
             <Header />
