@@ -1,0 +1,6 @@
+https://ejwebdev.github.io/meows-sweet-bites/
+https://ejwebdev.github.io/meows-sweet-bites/#/
+https://ejwebdev.github.io/meows-sweet-bites/#/products
+https://ejwebdev.github.io/meows-sweet-bites/#/price-lists
+https://ejwebdev.github.io/meows-sweet-bites/#/about
+https://ejwebdev.github.io/meows-sweet-bites/#/contact
