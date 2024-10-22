@@ -5,7 +5,6 @@ function Banner2() {
     const navigate = useNavigate();
     const orderNowClick = () => {
         navigate("/products");
-        window.scrollTo(0, 0);
     };
 
     return (

@@ -54,7 +54,6 @@ function Pricing() {
     const navigate = useNavigate();
     const orderNowClick = () => {
         navigate("/contact");
-        window.scrollTo(0, 0);
     };
 
     return (

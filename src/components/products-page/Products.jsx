@@ -74,9 +74,6 @@ function Products() {
                                 <Link
                                     to={products.link}
                                     className="services-grid-link"
-                                    onClick={() => {
-                                        window.scrollTo(0, 0);
-                                    }}
                                 >
                                     Price Lists
                                     <span className="material-symbols-rounded">

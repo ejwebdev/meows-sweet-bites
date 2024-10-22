@@ -11,6 +11,17 @@ import Banner2 from "./components/banner2-page/Banner2.jsx";
 import Footer from "./components/footer-page/Footer.jsx";
 
 function App() {
+    // Scroll to Top when route change
+    const ScrollToTop = () => {
+        const { pathname } = useLocation();
+
+        useEffect(() => {
+            window.scrollTo(0, 0);
+        }, [pathname]);
+
+        return null;
+    };
+
     const location = useLocation();
     useEffect(() => {
         ReactGA.send({ hitType: "pageview", page: location.pathname });
@@ -18,6 +29,7 @@ function App() {
 
     return (
         <>
+            <ScrollToTop />
             <Header />
             <Routes>
                 <Route path="/" element={<Default />} />

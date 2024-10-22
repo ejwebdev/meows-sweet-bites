@@ -5,7 +5,6 @@ function Hero() {
     const navigate = useNavigate();
     const orderNowClick = () => {
         navigate("/products");
-        window.scrollTo(0, 0);
     };
 
     return (
