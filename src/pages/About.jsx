@@ -1,5 +1,5 @@
-import About from "../components/about-page/About.jsx";
-import Customers from "../components/customers-page/Customers.jsx";
+import About from "../components/about-section/About.jsx";
+import Customers from "../components/customers-section/Customers.jsx";
 
 function AboutPage() {
     return (
